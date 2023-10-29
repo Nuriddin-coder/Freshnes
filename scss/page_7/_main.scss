@@ -1,0 +1,49 @@
+.main_dess {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  column-gap: 122px;
+  margin: 0 auto;
+  width: 1500px;
+  height: 500px;
+
+  background-repeat: no-repeat;
+  background-image: url("../../img/pg7_main_img.png");
+  background-position: 11rem 0rem;
+  // background-size: cover;
+}
+
+.main_des__datas {
+  display: flex;
+  column-gap: 30px;
+  justify-content: space-between;
+  padding-top: 20px;
+
+}
+
+.main_des__datas_item {
+  color: $c-1-c;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.main_des__info {
+  padding-bottom: 30px;
+  color: $c-1-j;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.main_des__title {
+  padding-left: 3.5rem;
+  width: 569px;
+  color: $c-1-j;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+

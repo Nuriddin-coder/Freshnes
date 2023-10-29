@@ -1,0 +1,139 @@
+.blog {
+  padding-bottom: 100px;
+  &_des {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 32px;
+
+    &__title {
+      color: $c-1-a;
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &__btn {
+      @include btn(4, small, flas, true);
+    }
+  }
+
+  &__eat {
+    display: flex;
+    justify-content: center;
+    column-gap: 32 px;
+  }
+
+  &_dinner {
+    width: 496px;
+    height: 374px;
+    border-radius: 10px;
+
+    background-repeat: no-repeat;
+    background-image: url("../../img/blog_main_img.png");
+
+    &__top {
+      padding-top: 24px;
+      padding-left: 32px;
+    }
+
+    &__tip {
+      width: 80px;
+      padding: 0px 8px;
+      border-radius: 12px;
+      background-color: $c-2-e;
+      color: $c-2-a;
+
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    &__title {
+      width: 400px;
+      color: $c-1-j;
+      font-family: Poppins;
+      font-size: 22px;
+      font-weight: 600;
+      padding-top: 228px;
+      padding-left: 24px;
+    }
+
+    &__info {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      color: $c-1-j;
+      padding-left: 24px;
+      padding-top: 10px;
+    }
+  }
+
+  &_vegetable {
+    width: 267px;
+    height: 343px;
+
+    &__img {
+      padding-bottom: 24px;
+    }
+
+    &__strong {
+      width: 80px;
+      padding: 0px 8px;
+      border-radius: 12px;
+      background-color: $c-2-e;
+      color: $c-2-a;
+
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    &__title {
+      color: $c-1-a;
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 600;
+      padding-top: 1rem;
+    }
+
+    &__author {
+      display: flex;
+      gap: 20px;
+      color: $c-1-a;
+      padding-top: 16px;
+
+      font-family: Open Sans;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+
+  &_salat {
+
+     display: flex;
+     flex-direction: column;
+     row-gap: 32px;
+    &__des {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 32px;
+    }
+
+    &__title {
+      width: 225px;
+
+      color: c-1-a;
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    &__author {
+        padding-top: 1rem;
+        display: flex;
+        column-gap: 1rem;
+    }
+  }
+}

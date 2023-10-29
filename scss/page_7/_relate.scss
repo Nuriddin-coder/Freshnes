@@ -1,0 +1,27 @@
+.relate {
+    padding-top: 48px;
+    padding-bottom: 96px;
+}
+
+.relate_des {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.relate_des__title {
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.relate_des__btn {
+    @include btn(4, small, flsa, true);
+}
+
+.relate_cards {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}

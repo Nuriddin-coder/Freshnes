@@ -1,0 +1,68 @@
+.customer {
+  padding-top: 64px;
+  padding-bottom: 9rem;
+
+   background-repeat: no-repeat;
+   background-image: url('../../img/Group\ 32.png'), url('../../img/Group\ 33.png');
+   background-position: left center, right center;
+
+  &_des {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__btn {
+    @include btn(4, small, flas, true);
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 32px;
+    padding-top: 38px;
+  }
+
+  &_card {
+    width: 369px;
+    height: 222px;
+    border: 2px solid $clr-border;
+    text-align: center;
+    position: relative;
+     
+      &::before {
+        content: "";
+        width: 48px;
+        height: 48px;
+        background-repeat: no-repeat;
+        background-image: url('../../img/customer_img.svg');
+        position: absolute;
+        bottom: -20px;
+        left: 10rem;
+      }
+
+    &__text {
+      padding: 24px 32px 0px 32px;
+      color: $c-1-a;
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    &__name {
+      padding-top: 24px;
+
+      color: $c-1-c;
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+}

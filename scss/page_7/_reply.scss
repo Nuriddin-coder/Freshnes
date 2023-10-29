@@ -1,0 +1,137 @@
+.reply {
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 48px;
+
+  &__title {
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  &__text {
+    color: $c-1-a;
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    padding-top: 10px;
+  }
+
+  &__clr {
+    color: $c-1-a;
+    font-family: Open Sans;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration-line: underline;
+  }
+}
+
+.reply_input {
+  padding-top: 1rem;
+  display: flex;
+  column-gap: 32px;
+  padding-bottom: 32px;
+}
+
+.width_push {
+  width: 497px;
+}
+
+.reply_input label {
+  display: block;
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.reply_input input {
+  width: 270px;
+  padding: 11px 16px 12px 21px;
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background-color: $c-1-h;
+  outline: none;
+  color: $c-1-c;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.reply_btn {
+  @include btn(2, large, flsa, flsa);
+  margin-bottom: 32px;
+}
+
+////----------------------------------------
+
+.comments_card {
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  width: 575px;
+  margin-top: 32px;
+  padding: 15px 0 15px 1rem;
+}
+
+.comments_card__author {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.comments_card__text {
+  width: 537px;
+  color: $c-1-a;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 24px;
+}
+
+.comments_card__name {
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.comments_card__data {
+  color: $c-1-d;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.comments_card__admin {
+  padding: 2px 8px;
+  color: $c-2-a;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 17px;
+
+  border-radius: 12px;
+  background-color: $c-2-e;
+}
+
+.comments_card__second {
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  width: 468px;
+  margin-top: 32px;
+  padding: 15px 0 15px 1rem;
+  margin-left: 6.8rem;
+}
+
+.comments_card__text__second {
+  width: 436px;
+  color: $c-1-a;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 24px;
+}
+
+

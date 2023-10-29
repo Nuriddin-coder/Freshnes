@@ -1,0 +1,122 @@
+.space {
+  padding-bottom: 3rem;
+}
+
+.space_main {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.space_sidebar {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  width: 270px;
+
+  &__title {
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__links {
+    padding-top: 12px;
+    color: $c-2-a;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration-line: underline;
+
+    &:hover {
+      text-decoration-line: none;
+    }
+  }
+}
+
+.space_join__title {
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.space_join__text {
+  padding-top: 10px;
+  color: $c-1-c;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 24px;
+}
+
+.space_join__input {
+  width: 270px;
+  padding: 8px 10px 9px 11px;
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background: $c-1-h;
+}
+
+.space_join__input input {
+  border: none;
+  color: $c-1-c;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  background: transparent;
+  outline: none;
+}
+
+.space_join__input a {
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.space_cards {
+  width: 870px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-left: 32px;
+}
+
+.card_item__data {
+  // display: block;  
+  color: $c-1-a;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+.card_item {
+  width: 267px;
+}
+
+.card_item__title {
+  padding-top: 8px;
+  padding-bottom: 1rem;
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.space_cards strong {
+  color: $c-1-a;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.tag_push {
+  margin-top: 24px;
+}
+
+.show_btn__item {
+  @include btn(2, small, flsa, true);
+}

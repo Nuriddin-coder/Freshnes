@@ -1,0 +1,26 @@
+.reload {
+    padding-bottom: 64px;
+  &_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+
+    &__title {
+      color: $c-1-a;
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &__btn {
+        @include btn(4, medium, flsa, true)
+    }
+  }
+
+  &_cards {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

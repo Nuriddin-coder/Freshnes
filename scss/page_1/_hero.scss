@@ -1,0 +1,109 @@
+.hero {
+  padding-top: 64px;
+
+  &__container {
+    display: flex;
+  }
+
+  &_main__sidebar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+  }
+
+  &_sidebar__box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  &_sidebar__title {
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 16px;
+  }
+
+  &_sidebar__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    padding-bottom: 48px;
+  }
+
+  &_sidebar__links {
+    color: $c-2-a;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration-line: underline;
+  }
+
+  &_sidebar__btn {
+    @include btn(3, large, flas, true);
+  }
+
+  // ------ HERO_PRODUCT ------------//
+
+  &_product {
+    width: 100%;
+  }
+
+  &_product__main {
+    display: flex;
+    justify-content: center;
+    column-gap: 32px;
+  }
+
+  &_main__item {
+    width: 419px;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-image: url("../../img/hero_product_img.svg");
+    border-radius: 12px;
+    background-color: $c-3-e;
+
+    &_text {
+      padding-top: 48px;
+      padding-left: 30px;
+
+      color: $c-2-a;
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    &_title {
+      padding-top: 10px;
+      padding-left: 30px;
+      padding-bottom: 80px;
+
+      color: $c-1-a;
+      font-family: Poppins;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    &_btn {
+      @include btn(1, large, flas, true);
+      margin-left: 30px;
+    }
+  }
+
+  // ----------- HERO_CARDS  ---------------/ //  
+
+  &_product__cards {
+    padding-top: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 55px;
+  }
+
+
+   .card {
+    @include card;
+   }
+}

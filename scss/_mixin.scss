@@ -1,0 +1,220 @@
+@mixin btn($variant, $size, $startIcon, $endIcon) {
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 12px;
+  display: inline-block;
+  background-color: transparent;
+
+  @if $size == large {
+    padding: 18px 48px;
+  } @else if $size == medium {
+    padding: 12px 16px;
+  } @else if $size == small {
+    padding: 12px;
+  }
+
+  // Variant 1
+  @if $variant == 1 {
+    border-radius: 12px;
+    border: 2px solid $c-2-c;
+    color: $c-1-a;
+  }
+  @if ($variant == 1) and ($startIcon == true) {
+    &:before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url("../img/btn1_icon.svg");
+      background-position: left 7px;
+    }
+  }
+  @if $variant == 1 and $endIcon == true {
+    &:after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url("../img/btn1_icon.2.svg");
+      background-position: right 7px;
+    }
+  }
+  // variant 2
+  @if $variant == 2 {
+    border-radius: 12px;
+    border: 2px solid $c-2-b;
+    color: $c-1-j;
+    background-color: $c-2-a;
+  }
+  @if ($variant == 2) and ($startIcon == true) {
+    &:before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url("../img/btn_left.svg");
+      background-position: -5.5px 3px;
+    }
+  }
+  @if $variant == 2 and $endIcon == true {
+    &:after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url("../img/btn_right.svg");
+      background-position: 5.5px 3px;
+    }
+  }
+
+  // variant 3
+  @if $variant == 3 {
+    border-radius: 12px;
+    color: $c-1-a;
+    background-color: $c-1-f;
+    border: none;
+  }
+  @if ($variant == 3) and ($startIcon == true) {
+    &:before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url("../img/btn3_left.svg");
+      background-position: 1px 6px;
+    }
+  }
+  @if $variant == 3 and $endIcon == true {
+    &:after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url("../img/btn3_right.svg");
+      background-position: 9px 7px;
+    }
+  }
+
+  // variant 4
+  @if $variant == 4 {
+    border-radius: 12px;
+    color: $c-1-a;
+    background-color: $c-1-j;
+    border: none;
+  }
+  @if ($variant == 4) and ($startIcon == true) {
+    &:before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url("../img/btn1_icon.svg");
+      background-position: 1px 6px;
+    }
+  }
+  @if $variant == 4 and $endIcon == true {
+    &:after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url("../img/btn1_icon.2.svg");
+      background-position: 9px 7px;
+    }
+  }
+}
+
+@mixin card {
+  width: 269px;
+  padding: 16px;
+  border: 1px solid $c-1-d;
+  border-radius: 12px;
+
+  &_view {
+    width: 237px;
+    height: 180px;
+    // padding: 100px 150px;
+    background-color: $clr-rcd;
+    border-radius: 9px;
+  }
+
+  &_title {
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 16px;
+  }
+
+  &_text {
+    width: 251px;
+    color: $c-1-b;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 10px;
+  }
+
+  &_price {
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &_btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_btn {
+    @include btn(2, medium, flas, flas);
+  }
+}
+
+/*
+  HTML  tamplate  for card :
+
+   <div class="card">
+      <div class="card_view"></div>
+      <h2 class="card_title">Product Title</h2>
+      <p class="card_text">Space for a small product description </p>
+      <span class="card_btns">
+        <strong class="card_price">1.45 USD</strong>
+        <button class="card_btn">Buy now</button>
+      </span>
+    </div>
+
+
+    ========================================================
+
+
+     ===  use the mixin for buttons
+
+     .btn {
+       @include btn(4, large, flas, true);
+      }
+
+     ===  use the mixin for card
+
+    .card {
+       @include card;
+     }
+
+    */

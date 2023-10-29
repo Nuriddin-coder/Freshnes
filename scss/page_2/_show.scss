@@ -1,0 +1,67 @@
+.show {
+  padding-bottom: 70px;
+  &__container {
+    padding-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_page {
+    display: flex;
+    column-gap: 10px;
+
+    &__text {
+      color: c-1-c;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    &__links {
+      color: $c-1-a;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-weight: 400;
+
+      &:hover {
+        color: $c-2-a;
+      }
+    }
+  }
+
+  &_btn {
+    @include btn(2, large, flsa, true);
+
+    &::after {
+      width: 20px;
+      height: 20px;
+      transform: rotate(90deg);
+      background-position: 7px -4px;
+    }
+  }
+
+  &_products {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+
+    &__num {
+      padding: 2px 8px;
+      border-radius: 12px;
+      background-color: $c-2-e;
+
+      color: $c-2-a;
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    &__text {
+      color: $c-1-c;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+}

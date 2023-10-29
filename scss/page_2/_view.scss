@@ -1,0 +1,55 @@
+.view {
+  padding-bottom: 2rem;
+  &_second {
+    display: flex;
+    column-gap: 10px;
+    margin-right: 10px;
+    padding: 16px 10px;
+
+    &__page {
+      color: $c-1-c;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    &__fruit {
+      color: $c-1-a;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+
+  &_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__num {
+      padding: 2px 8px;
+      border-radius: 12px;
+      background: $c-2-e;
+    }
+
+    &__select {
+      display: flex;
+      column-gap: 24px;
+    }
+
+    &__selecting {
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
+
+      color: $c-1-c;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-weight: 400;
+
+       &:hover {
+        color: $c-1-a;
+       }
+    }
+  }
+}

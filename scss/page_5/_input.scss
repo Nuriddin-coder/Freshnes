@@ -1,0 +1,826 @@
+.input_box {
+  display: flex;
+  //   justify-content: space-between;
+}
+
+.input_billing {
+  width: 670px;
+}
+
+.main_des {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-shrink: 1;
+  padding-bottom: 32px;
+
+  &__title {
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  &__text {
+    padding-top: 4px;
+    color: $c-1-c;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+.info_input {
+  padding-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.info_input__lable {
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.info_input__item {
+  width: 319px;
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background: $c-1-h;
+  display: block;
+  padding: 11px 16px 12px 21px;
+  outline-color: $c-1-c;
+
+  color: $c-1-c;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+//// ------------- for check input  --------------///////////
+
+.input_check {
+  display: flex;
+  align-items: end;
+  column-gap: 8px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  max-width: 243px;
+  border: 1px solid $c-1-d;
+  border-radius: 10px;
+  padding: 2px 2px 9px 2px;
+  background-color: $c-1-h;
+
+  &__text {
+    padding: 0 8px;
+    border-radius: 12px;
+    border: 1px solid $c-1-e;
+
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+.input_check input {
+  display: none;
+}
+
+.input_check label {
+  padding-left: 20px;
+  position: relative;
+  cursor: pointer;
+
+  color: $c-1-a;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    transform: translate(-10px, 5px);
+    display: inline-block;
+    border: 2px solid $c-1-d;
+    border-radius: 5px;
+  }
+}
+
+.input_check input[type="checkbox"]:checked + label::before {
+  background-color: $c-2-a;
+  border: 2px solid $c-2-b;
+  background-repeat: no-repeat;
+  background-image: url("../../img/Vector\ \(1\).png");
+  background-position: center;
+}
+
+//// -----------  input  method -------------------/
+
+.input_method {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  max-width: 670px;
+  border: 1px solid $c-1-d;
+  border-radius: 10px;
+  padding: 6px 6px 11px 6px;
+  background-color: $c-1-h;
+
+  &__price {
+    padding-left: 140px;
+    color: $c-2-a;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+
+    &_second {
+      padding-left: 153px;
+      color: $c-2-a;
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+
+  &__title {
+    padding-left: 8px;
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  &__logo {
+    padding-left: 195px;
+
+    &_second {
+      padding-left: 160px;
+    }
+  }
+
+  &__text {
+    padding: 0 8px;
+    border-radius: 12px;
+    border: 1px solid $c-1-e;
+
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+.input_method input {
+  display: none;
+}
+
+.input_method label {
+  padding-left: 20px;
+  position: relative;
+  cursor: pointer;
+
+  color: $c-1-a;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    transform: translate(-10px, 5px);
+    display: inline-block;
+    border: 2px solid $c-1-d;
+    border-radius: 50%;
+  }
+}
+
+.input_method input[type="radio"]:checked + label::before {
+  background-color: $c-2-a;
+}
+
+////// --------------- credit card  --------------------------//
+
+.payment_card {
+  height: 250px;
+  border: 1px solid $c-1-d;
+  background: $c-1-j;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.payment_card__input {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  margin-top: 5px;
+  margin-bottom: 32px;
+
+  max-width: 670px;
+  border-radius: 10px;
+  padding: 6px 6px 11px 6px;
+
+  &__title {
+    padding-left: 8px;
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  &__text {
+    padding: 0 8px;
+    border-radius: 12px;
+    border: 1px solid $c-1-e;
+
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+.card_logo {
+  padding-left: 27rem;
+}
+
+.payment_card__input input {
+  display: none;
+}
+
+.payment_card__input label {
+  padding-left: 20px;
+  position: relative;
+  cursor: pointer;
+
+  color: $c-1-a;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    transform: translate(-10px, 5px);
+    display: inline-block;
+    border: 2px solid $c-1-d;
+    border-radius: 50%;
+  }
+}
+
+.payment_card__input input[type="checkbox"]:checked + label::before {
+  background-color: $c-2-a;
+}
+
+///// ------------ card input  ------------------  ///////
+
+.card_input input {
+  margin-left: 15px;
+  padding: 11px 16px 12px 21px;
+  width: 625px;
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background-color: $c-1-h;
+  outline-color: $c-1-c;
+  display: block;
+}
+
+.card_input label {
+  margin-left: 15px;
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+//// -------------  card info   ---------------------//
+
+.card_info {
+  display: flex;
+  column-gap: 10px;
+  padding-top: 32px;
+}
+
+.card_info__lable_main {
+  color: $c-1-a;
+  margin-left: 15px;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.card_info__lable {
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.card_info__one {
+  width: 350px;
+  margin-left: 15px;
+  padding: 11px 16px 12px 21px;
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  outline-color: $c-1-c;
+  background: $c-1-h;
+  display: block;
+}
+
+.card_info__two {
+  width: 120px;
+  padding: 11px 16px 12px 18px;
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  outline-color: $c-1-c;
+  background: $c-1-h;
+  display: block;
+}
+
+///// ----------  payment  chooosing  --------///////
+
+.payment_chooseing {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  max-width: 670px;
+  border: 1px solid $c-1-d;
+  border-radius: 10px;
+  padding: 6px 6px 11px 6px;
+  background-color: $c-1-h;
+
+  &__title {
+    padding-left: 8px;
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  &__text {
+    padding: 0 8px;
+    border-radius: 12px;
+    border: 1px solid $c-1-e;
+
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+.payment_chooseing input {
+  display: none;
+}
+
+.payment_chooseing label {
+  padding-left: 20px;
+  position: relative;
+  cursor: pointer;
+
+  color: $c-1-a;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    transform: translate(-10px, 5px);
+    display: inline-block;
+    border: 2px solid $c-1-d;
+    border-radius: 50%;
+  }
+}
+
+.payment_chooseing input[type="radio"]:checked + label::before {
+  background-color: $c-2-a;
+}
+
+.payment_choose {
+  padding-left: 30rem;
+}
+
+/////  -------------  additional  input  -------------////
+
+.additional_input label {
+  display: block;
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.additional_input textarea {
+  resize: none;
+  width: 670px;
+  padding: 11px 16px 82px 21px;
+  margin-bottom: 3rem;
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background: $c-1-h;
+  outline-color: $c-1-c;
+}
+
+/////  coniform   check  --------------------------------///
+
+.coniform_check__first {
+  display: flex;
+  align-items: end;
+  column-gap: 8px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  max-width: 578px;
+  border: 1px solid $c-1-d;
+  border-radius: 10px;
+  padding: 2px 2px 8px 2px;
+  background-color: $c-1-h;
+
+  &__text {
+    padding: 0 8px;
+    border-radius: 12px;
+    border: 1px solid $c-1-e;
+
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+.coniform_check__first input {
+  display: none;
+}
+
+.coniform_check__first label {
+  padding-left: 20px;
+  position: relative;
+  cursor: pointer;
+
+  color: $c-1-a;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    transform: translate(-10px, 5px);
+    display: inline-block;
+    border: 2px solid $c-1-d;
+    border-radius: 5px;
+  }
+}
+
+.coniform_check__first input[type="checkbox"]:checked + label::before {
+  background-color: $c-2-a;
+  border: 2px solid $c-2-b;
+  background-repeat: no-repeat;
+  background-image: url("../../img/Vector\ \(1\).png");
+  background-position: center;
+}
+
+///  second  ------
+
+.coniform_check__second {
+  display: flex;
+  align-items: end;
+  column-gap: 8px;
+  margin-bottom: 32px;
+
+  max-width: 578px;
+  border: 1px solid $c-1-d;
+  border-radius: 10px;
+  padding: 2px 2px 8px 2px;
+  background-color: $c-1-h;
+
+  &__text {
+    padding: 0 8px;
+    border-radius: 12px;
+    border: 1px solid $c-1-e;
+
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+.coniform_check__second input {
+  display: none;
+}
+
+.coniform_check__second label {
+  padding-left: 20px;
+  position: relative;
+  cursor: pointer;
+
+  color: $c-1-a;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    transform: translate(-10px, 5px);
+    display: inline-block;
+    border: 2px solid $c-1-d;
+    border-radius: 5px;
+  }
+}
+
+.coniform_check__second input[type="checkbox"]:checked + label::before {
+  background-color: $c-2-a;
+  border: 2px solid $c-2-b;
+  background-repeat: no-repeat;
+  background-image: url("../../img/Vector\ \(1\).png");
+  background-position: center;
+}
+
+.coniform_btn {
+  @include btn(2, large, flsa, flsa);
+}
+
+/// ----------------------  SAFE   ----------------------///
+
+.safe {
+  width: 213px;
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.safe_img {
+  width: 27px;
+  height: 28px;
+}
+
+.safe_title {
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+  padding-top: 8px;
+}
+
+.safe_text {
+  color: $c-1-c;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 3px;
+}
+
+.copyright {
+  color: $c-1-a;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 64px 0;
+}
+
+//////  ------------------------   order  ---------------------------////
+
+.order {
+  //   max-width: 470px;
+  padding-left: 3rem;
+}
+
+.order_title {
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 600;
+  padding-top: 25px;
+}
+
+.order_text {
+  padding-top: 5px;
+  color: $c-1-c;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.order_card {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.card_rate {
+  width: 110px;
+}
+
+.card_rate__fake {
+  display: block;
+  width: 120px;
+  height: 75px;
+  border-radius: 5px;
+  background-color: $c-1-h;
+}
+
+.card_rate__text {
+  display: flex;
+  column-gap: 8px;
+  padding-top: 10px;
+}
+
+.card_rate--push {
+  padding-top: 15px;
+}
+
+.card_des {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.card_des__title {
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.card_des__text {
+  display: flex;
+  justify-content: space-between;
+
+  //   column-gap: 2rem;
+  row-gap: 20px;
+  padding-top: 10px;
+}
+
+.card_des__name {
+  color: $c-1-c;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.card_des__img {
+  padding-top: 16px;
+  display: block;
+  padding-bottom: 20px;
+}
+
+.card_des__price {
+  color: $c-2-a;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card_des__sale {
+  padding-top: 5px;
+  color: $c-1-c;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration-line: line-through;
+}
+
+.card_des__info {
+  color: $c-1-a;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+.card_search {
+  border: 1px solid red;
+  height: 36px;
+  padding: 6px;
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background-color: $c-1-h;
+  margin-top: 8.1rem;
+}
+
+.card_search input {
+  width: 45px;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  color: $c-1-h;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card_search select {
+  border: none;
+  outline: none;
+  background: transparent;
+
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.order_info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.order_info__text {
+  padding-top: 12px;
+}
+
+.order_price {
+  text-align: end;
+}
+
+.order_input {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 32px;
+  width: 436px;
+  padding: 11px 16px 12px 21px;
+
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background: $c-1-h;
+}
+
+.order_input input {
+  width: 300px;
+  border-radius: 12px;
+  border: none;
+  background: transparent;
+  outline: none;
+
+  color: $c-1-c;
+
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.order_input a {
+  // padding-left: 125px;
+  text-align: end;
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.total {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total_title {
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.total_text {
+  padding-top: 5px;
+  color: $c-2-a;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.total_price {
+  color: $c-2-a;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 600;
+}

@@ -1,0 +1,282 @@
+.product {
+  &__container {
+    padding-top: 80px;
+  }
+
+  &_main {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    // justify-content: s;
+  }
+}
+
+.sidebar {
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+
+  &_title {
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 4px;
+  }
+
+  &_categorie__des {
+    display: flex;
+    column-gap: 100px;
+    align-items: center;
+    padding-top: 1rem;
+  }
+
+  &_categorie__title {
+    color: $c-1-a;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &_categorie__num {
+    padding: 0 8px;
+    border-radius: 12px;
+    background: $c-2-e;
+
+    color: $c-2-a;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  &_btn__light {
+    @include btn(2, medium, flsa, flsa);
+  }
+
+  &_btn__dark {
+    @include btn(4, medium, flsa, flsa);
+  }
+}
+
+///  ----------------  sidebar  brand  -----------///
+
+.sidebar_brand {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  &__title {
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 4px;
+  }
+}
+
+.sidebar_check input {
+  display: none;
+}
+
+.sidebar_check label {
+  padding-left: 10px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    transform: translate(-10px, 5px);
+    display: inline-block;
+    border: 2px solid $c-1-d;
+    border-radius: 5px;
+  }
+}
+
+.sidebar_check input[type="checkbox"]:checked + label::before {
+  background-color: $c-2-a;
+  border: 2px solid $c-2-b;
+  background-repeat: no-repeat;
+  background-image: url("../../img/Vector\ \(1\).png");
+  background-position: center;
+}
+
+//// -------------------------- sidebar  rating ---------
+
+.sidebar_rating {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  &__title {
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 4px;
+  }
+}
+
+///// ------------------  sidebar pricing -------------
+
+.sidebar_price {
+  &__title {
+    color: $c-1-a;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 4px;
+    padding-bottom: 1rem;
+  }
+
+  &__inputs {
+    display: flex;
+    padding-top: 1rem;
+  }
+
+  &__inputs input {
+    width: 110px;
+    padding: 11px 16px 12px 21px;
+    border-radius: 12px;
+    border: 1px solid $c-1-d;
+    background: $c-1-h;
+    outline-width: 1px solid $c-1-c;
+    outline-color: $c-1-c;
+  }
+
+  &__btns {
+    display: flex;
+    column-gap: 34px;
+    padding-top: 31px;
+  }
+}
+
+/// ------------------------ card --------------------//
+
+.cards {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+
+  &_btns {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 26px;
+  }
+
+  &_item {
+    display: flex;
+    // column-gap: 100px;
+    align-items: center;
+    border-radius: 12px;
+    // border: 1px solid $c-1-d;
+
+    &__main {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 35px;
+      row-gap: 57px;
+    }
+
+    &__title {
+      color: $c-1-a;
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 600;
+      padding-bottom: 5px;
+    }
+
+    &__text {
+      color: $c-1-b;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-style: normal;
+      padding-bottom: 8px;
+    }
+
+    &__des {
+      width: 390px;
+      padding-right: 10rem;
+    }
+
+    &__zone {
+      padding: 120px 130px;
+      border-radius: 12px;
+      background-color: $c-1-h;
+      margin-right: 3rem;
+    }
+  }
+}
+
+.cards_item__des_info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.cards_item__des_text {
+  color: $c-1-c;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cards_item__des_clr {
+  color: $c-2-a;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/////   pricing --------------
+
+.cards_item__price {
+    width: 188px;
+    // padding-right: 2rem;
+}
+ 
+
+.cards_item__price_num {
+  color: $c-1-a;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cards_item__price_sale {
+  color: $c-1-c;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration-line: strikethrough;
+}
+
+.cards_item__price_title {
+  color: c-1-c;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+  padding-top: 1rem;
+}
+
+.cards_item__price_text {
+  color: $c-1-c;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.cards_btns__light {
+    @include btn(2, large, flas, true);
+    padding: 12px 16px;
+}
+
+.cards_btns__dark {
+    @include btn(3, large, flsa, flsa);
+    margin-top: 5px;
+    padding: 12px 16px;
+}
